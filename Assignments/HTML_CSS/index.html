@@ -1,47 +1,106 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> Hello :D </title>
-</head>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adine's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
     body {
-        background-color: #8eddfd;
-        font-family: Arial, sans-serif;
-        padding: 20px;
+      background: linear-gradient(to right, #d0f4fd, #b0ebf7);
+      font-family: 'Inter', sans-serif;
+      color: #1e293b;
+      margin: 0;
+      padding: 0;
     }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     .skill {
-    display: inline-block;
-    background-color: #ffffffaa;
-    color: #000;
-    padding: 4px 10px;
-    margin: 3px;
-    border-radius: 12px;
-    font-size: 13px;
-}
-</style>
+      display: inline-block;
+      background-color: #ffffffdd;
+      color: #1e293b;
+      padding: 6px 14px;
+      margin: 5px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #cbd5e1;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
 <body>
+  <div class="container">
     <h1>Adine Vikash</h1>
+
     <h2>Portfolio.</h2>
     <h3>Technical Community Manager at Mysterium Network</h3>
     <p>Cultivate a vibrant and secure community on <b>Discord and Telegram</b>, ensuring engagement and safety for all members.</p>
     <p>Guide users through <strong>Mysterium Network’s</strong> products, including <b>Mysterium VPN, Mystnodes, and Mysterium Dark.</b></p>
     <p>Foster engagement by moderating discussions, organizing events, and providing proactive user assistance.</p>
     <p>Address technical inquiries, resolve user challenges, and educate the community about product features.</p>
-    <a href = "https://adinetech.com/" target = "_blank">Portfolio</a>
+    <p><a href="https://adinetech.com/" target="_blank">Portfolio Website ↗</a></p>
+
+    <hr>
 
     <h2>Project</h2>
     <h3>Mysterium Exporter</h3>
     <p>A Prometheus exporter for Mysterium Network nodes, enabling monitoring and observability for node operators.</p>
+    <p><a href="https://github.com/adinetech/mysterium-exporter" target="_blank">View on GitHub :D</a></p>
 
-    <a href="https://github.com/adinetech/mysterium-exporter" target="_blank">
-        View on GitHub :D
-    </a>
+    <hr>
 
     <h2>Skills</h2>
     <div>
-        <span class="skill">🌐 Web3</span>
-        <span class="skill">🧠 Leadership</span>
-        <span class="skill">👥 Community</span>
-        <span class="skill">🛠️ Support</span>
-        <span class="skill">🤝 Networking</span>
-        <span class="skill">☁️ Cloud</span>
+      <span class="skill">🌐 Web3</span>
+      <span class="skill">🧠 Leadership</span>
+      <span class="skill">👥 Community</span>
+      <span class="skill">🛠️ Support</span>
+      <span class="skill">🤝 Networking</span>
+      <span class="skill">☁️ Cloud</span>
     </div>
+  </div>
+</body>
+</html>
