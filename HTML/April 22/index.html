@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unordered and Ordered</title>
+  <title>OL & UL Practice</title>
   <style>
     body {
       background-color: lightyellow;
@@ -14,19 +14,20 @@
 
     .container {
       display: flex;
-      justify-content: center;
-      gap: 100px;
-      align-items: flex-start;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
     }
 
-    ul, ol {
+    .list-box {
       background-color: white;
       border: 1px solid black;
-      margin: 0;
       padding: 20px 30px;
       font-size: 18px;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
+      width: 80%;
+      max-width: 600px;
     }
 
     p {
@@ -39,40 +40,105 @@
       color: white;
       text-align: center;
     }
+
+    ul.circle {
+      list-style-type: circle;
+    }
+
+    ol.roman {
+      list-style-type: upper-roman;
+    }
+
+    ol.reverse-start {
+      list-style-position: inside;
+    }
+
+    ul.columns {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div>
-      <p>Unordered</p>
-      <ul>
+    
+    <div class="list-box">
+      <p>Unordered List (Circle Bullets)</p>
+      <ul class="circle">
         <li>stud1</li>
         <li>stud2</li>
         <li>stud3</li>
         <li>stud4</li>
         <li>stud5</li>
-        <li>stud6</li>
-        <li>stud7</li>
-        <li>stud8</li>
-        <li>stud9</li>
-        <li>stud10</li>
       </ul>
     </div>
-    <div>
-      <p>Ordered</p>
-      <ol>
+
+    <div class="list-box">
+      <p>Ordered List (Roman)</p>
+      <ol class="roman">
         <li>stud1</li>
         <li>stud2</li>
         <li>stud3</li>
         <li>stud4</li>
         <li>stud5</li>
-        <li>stud6</li>
-        <li>stud7</li>
-        <li>stud8</li>
-        <li>stud9</li>
-        <li>stud10</li>
       </ol>
     </div>
+
+    <div class="list-box">
+      <p>Nested List</p>
+      <ul>
+        <li>Fruits
+          <ul>
+            <li>Apple</li>
+            <li>Mango
+              <ul>
+                <li>Alphonso</li>
+                <li>Totapuri</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Vegetables</li>
+      </ul>
+    </div>
+
+    <div class="list-box">
+      <p>Reversed Ordered List (Starts from 10)</p>
+      <ol reversed start="10" class="reverse-start">
+        <li>Stud A</li>
+        <li>Stud B</li>
+        <li>Stud C</li>
+      </ol>
+    </div>
+
+    <div class="list-box">
+      <p>Multi-column Unordered List</p>
+      <ul class="columns">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>Go</li>
+        <li>Rust</li>
+      </ul>
+    </div>
+
+    <div class="list-box">
+      <p>Mixed List (OL + UL)</p>
+      <ol>
+        <li>Groceries
+          <ul>
+            <li>Milk</li>
+            <li>Bread</li>
+          </ul>
+        </li>
+        <li>Workout</li>
+      </ol>
+    </div>
+
   </div>
 </body>
 </html>
