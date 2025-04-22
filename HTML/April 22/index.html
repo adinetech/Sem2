@@ -1,105 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adine's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unordered and Ordered</title>
   <style>
     body {
-      background: linear-gradient(to right, #d0f4fd, #b0ebf7);
-      font-family: 'Inter', sans-serif;
-      color: #1e293b;
+      background-color: lightyellow;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 40px;
     }
 
     .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      align-items: flex-start;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-
-    h2 {
-      font-size: 1.6rem;
-      margin-top: 2rem;
-      font-weight: 600;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      font-weight: 600;
+    ul, ol {
+      background-color: white;
+      border: 1px solid black;
+      margin: 0;
+      padding: 20px 30px;
+      font-size: 18px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
     }
 
     p {
-      line-height: 1.6;
-    }
-
-    a {
-      color: #0077cc;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .skill {
-      display: inline-block;
-      background-color: #ffffffdd;
-      color: #1e293b;
-      padding: 6px 14px;
-      margin: 5px;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 500;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    hr {
-      border: none;
-      border-top: 2px solid #cbd5e1;
-      margin: 2rem 0;
+      background-color: rgb(46, 176, 176);
+      font-size: 22px;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+      border: 2px solid black;
+      border-radius: 8px;
+      color: white;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Adine Vikash</h1>
-
-    <h2>Portfolio.</h2>
-    <h3>Technical Community Manager at Mysterium Network</h3>
-    <p>Cultivate a vibrant and secure community on <b>Discord and Telegram</b>, ensuring engagement and safety for all members.</p>
-    <p>Guide users through <strong>Mysterium Network’s</strong> products, including <b>Mysterium VPN, Mystnodes, and Mysterium Dark.</b></p>
-    <p>Foster engagement by moderating discussions, organizing events, and providing proactive user assistance.</p>
-    <p>Address technical inquiries, resolve user challenges, and educate the community about product features.</p>
-    <p><a href="https://adinetech.com/" target="_blank">Portfolio Website ↗</a></p>
-
-    <hr>
-
-    <h2>Project</h2>
-    <h3>Mysterium Exporter</h3>
-    <p>A Prometheus exporter for Mysterium Network nodes, enabling monitoring and observability for node operators.</p>
-    <p><a href="https://github.com/adinetech/mysterium-exporter" target="_blank">View on GitHub :D</a></p>
-
-    <hr>
-
-    <h2>Skills</h2>
     <div>
-      <span class="skill">🌐 Web3</span>
-      <span class="skill">🧠 Leadership</span>
-      <span class="skill">👥 Community</span>
-      <span class="skill">🛠️ Support</span>
-      <span class="skill">🤝 Networking</span>
-      <span class="skill">☁️ Cloud</span>
+      <p>Unordered</p>
+      <ul>
+        <li>stud1</li>
+        <li>stud2</li>
+        <li>stud3</li>
+        <li>stud4</li>
+        <li>stud5</li>
+        <li>stud6</li>
+        <li>stud7</li>
+        <li>stud8</li>
+        <li>stud9</li>
+        <li>stud10</li>
+      </ul>
+    </div>
+    <div>
+      <p>Ordered</p>
+      <ol>
+        <li>stud1</li>
+        <li>stud2</li>
+        <li>stud3</li>
+        <li>stud4</li>
+        <li>stud5</li>
+        <li>stud6</li>
+        <li>stud7</li>
+        <li>stud8</li>
+        <li>stud9</li>
+        <li>stud10</li>
+      </ol>
     </div>
   </div>
 </body>
