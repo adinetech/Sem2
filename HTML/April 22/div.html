@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Theme</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fffef8;
+      color: #212121;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .box, .card, .hover, .chat {
+      padding: 16px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .header, .footer {
+      background-color: #2196f3;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      background: #f44336;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .hover:hover {
+      background-color: #fff176;
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .gradient {
+      background: linear-gradient(to right, #ffeb3b, #2196f3);
+      color: #212121;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .chat {
+      max-width: 250px;
+      background: #e3f2fd;
+    }
+
+    .chat.right {
+      margin-left: auto;
+      background: #ffcdd2;
+    }
+
+    .alert {
+      background: #fff9c4;
+      border-left: 5px solid #ffeb3b;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .success {
+      background: #c8e6c9;
+      border-left: 5px solid #4caf50;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Color Theme</div>
+
+  <div class="box">Welcome to my primary colored layout!</div>
+
+  <div class="flex">
+    <div class="box" style="flex: 1; background-color:#ffebee;">Left Side</div>
+    <div class="box" style="flex: 1; background-color:#e3f2fd;">Right Side</div>
+  </div>
+
+  <div class="card" style="background:#fff9c4;">
+    <img src="https://via.placeholder.com/400x200.png?text=Colorful+Image" alt="Card Image" />
+    <h3>Card Title</h3>
+    <p>This is a card with primary colors.</p>
+  </div>
+
+  <div class="gradient">A Gradient of Blue and Yellow</div>
+
+  <div class="hover">Hover over me for a pop of yellow!</div>
+
+  <div class="btn" onclick="document.getElementById('extra').style.display='block'">Click for Surprise</div>
+  <div id="extra" class="box" style="display:none;">🎉 Surprise content revealed!</div>
+
+  <div class="alert">⚠️ Important announcement here!</div>
+  <div class="success">✅ Action was successful!</div>
+
+  <div class="chat">Hey, love the colors!</div>
+  <div class="chat right">Thanks! Inspired by primary tones!</div>
+
+  <div class="footer">© 2025 Primary Colors Page</div>
+
+</body>
+</html>
