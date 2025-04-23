@@ -1,0 +1,90 @@
+body {
+    font-family: "Gill Sans", sans-serif;
+    background-color: lightblue;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(85, 182, 132);
+    overflow: hidden;
+    border-radius: 15px;
+    height: 40px;
+    align-content: center;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    }
+.container-head {
+    background-color: rgb(77,69,219);
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+}
+.container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    margin: 10px;
+}
+.big-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    margin: 10px;
+    height: 600px;
+}
+
+.first-container {
+    background-color: rgb(245,245,247);
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    margin: 10px;
+    height: 150px;
+    border-color: rgb(216,217,219);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.second-container {
+    background-color: rgb(245,245,247);
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    margin: -08px;
+    height: 300px;
+    border-color: rgb(216,217,219);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.blue-container {
+    background-color: rgb(77,69,219);
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.yellow-container {
+    background-color: rgb(234,162,59);
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    margin: 10px;
+    border-color: rgb(66,54,125);
+    border-style: solid;
+    border-width: 2px;
+    height: 90px;
+}
