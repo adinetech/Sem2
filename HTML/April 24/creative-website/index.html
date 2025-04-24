@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML + CSS Practice Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #eef2f7;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+
+        nav {
+            background-color: #0056b3;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .section-title {
+            border-left: 4px solid #007BFF;
+            padding-left: 1rem;
+            margin: 2rem 0 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title span {
+            margin-right: 0.5rem;
+        }
+
+        .html-basics,
+        .css-basics,
+        .practice-examples {
+            padding: 2rem 0;
+            background-color: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tag-box,
+        .property-box {
+            background-color: #f0f8ff;
+            border: 1px solid #d1e7ff;
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag-name,
+        .property-name {
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        .tag-description,
+        .property-description {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .example-box-1 {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 6px;
+        }
+
+        .example-box-2 {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 0;
+            margin: 30px;
+            border-radius: 6px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+        }
+
+        .flex-item {
+            background-color: #e2edff;
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            flex: 1;
+            margin: 0 0.5rem;
+        }
+
+        .flex-item:nth-child(2) {
+            background-color: #cce5ff;
+        }
+
+        .styled-text {
+            text-align: center;
+            padding: 1rem;
+            border: 1px dashed #0056b3;
+            margin: 1rem 0;
+        }
+
+        .alert-box {
+            background-color: #fff3cd;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container"></div>
+            <h1>HTML + CSS Practice Guide</h1>
+            <p>Learn and practice HTML tags and CSS properties</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#practice">Practice</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="html" class="html-basics"></section>
+            <h2 class="section-title"><span>📄</span> HTML Basics</h2>
+
+            <div class="tag-box">
+                <div class="tag-name">&lt;html&gt;</div>
+                <div class="tag-description">— Root element that wraps the entire HTML document.</div>
+            </div>
+
+            <div class="tag-box"></div>
+                <div class="tag-name">&lt;head&gt;</div>
+                <div class="tag-description">— Contains metadata like title, links to CSS, charset.</div>
+            </div>
+
+            <div class="tag-box"></div>
+                <div class="tag-name">&lt;body&gt;</div>
+                <div class="tag-description">— Visible part of the HTML page.</div>
+            </div>
+        </section>
+
+        <section id="css" class="css-basics"></section>
+            <h2 class="section-title"><span>🎨</span> CSS Basics</h2>
+
+            <div class="property-box"></div>
+                <div class="property-name">color:</div>
+                <div class="property-description">Changes text color.</div>
+            </div>
+
+            <div class="property-box">
+                <div class="property-name">background-color:</div>
+                <div class="property-description">Sets the background color.</div>
+            </div>
+        </section>
+
+        <section id="practice" class="practice-examples"></section>
+            <h2 class="section-title"><span>💡</span> Practice Examples</h2>
+
+            <p>Experiment with padding and margin values to see the effects.</p>
+
+            <div class="example-box-1">
+                Box 1: Padding: 20px | Margin: 10px
+            </div>
+
+            <div class="example-box-2">
+                Box 2: Padding: 0 | Margin: 30px
+            </div>
+
+            <div class="flex-container">
+                <div class="flex-item">Flex Item 1</div>
+                <div class="flex-item">Flex Item 2</div>
+            </div>
+
+            <div class="styled-text">
+                Centered and styled text!
+            </div>
+
+            <div class="alert-box">
+                Rounded corner alert box
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            Built with 💙 for Beginners | Keep Practicing!
+        </div>
+    </footer>
+</body>
+
+</html>
